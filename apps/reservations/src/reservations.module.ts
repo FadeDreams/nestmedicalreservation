@@ -13,7 +13,8 @@ import { ReservationDocument, ReservationSchema } from './models/reservation.sch
       name: ReservationDocument.name,
       schema: ReservationSchema,
     }
-  ])],
+  ]),
+  ],
   controllers: [ReservationsController],
   providers: [ReservationsService, ReservationsRepository],
 })
