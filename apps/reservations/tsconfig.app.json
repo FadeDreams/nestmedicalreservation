@@ -1,7 +1,8 @@
-{onfig.json",
+{
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "declaration": true,
-    "outDir": "../../dist/libs/utils"
+    "declaration": false,
+    "outDir": "../../dist/apps/reservations"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]

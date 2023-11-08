@@ -23,5 +23,9 @@ import { ConfigService } from '@nestjs/config';
   providers: [],
   exports: [],
 })
-export class DatabaseModule { }
+export class DatabaseModule {
+  static forFeature(models: ModelDefinition[]): any {
+    return MongooseModule.forFeature(models);
+  }
+}
 
